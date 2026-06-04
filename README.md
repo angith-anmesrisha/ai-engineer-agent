@@ -51,8 +51,8 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
 ### Installation & Setup
 
 1. **Clone the Repository:**
-    git clone https://github.com/angith-anmesrisha/ai-engineer-agent.git
-    cd ai-engineer-agent
+   git clone [https://github.com/angith-anmesrisha/ai-engineer-agent.git](https://github.com/angith-anmesrisha/ai-engineer-agent.git)
+   cd ai-engineer-agent
 
 2. **Set Up a Virtual Environment:**
     python -m venv venv
