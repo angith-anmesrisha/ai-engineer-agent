@@ -1,6 +1,6 @@
 # AI Engineer Agent 🤖🛠️
 
-An autonomous, multi-agent framework designed to assist, streamline, and automate software engineering workflows. By leveraging advanced Large Language Models (LLMs), structural planning, and external tool integration, this agent can autonomously analyze codebases, generate robust unit tests, review pull requests, and orchestrate complex development tasks.
+An autonomous, multi-agent framework designed to assist, streamline, and automate software engineering workflows. By leveraging advanced Large Language Models (LLMs), structural planning, and external tool integration, this agent can autonomously create codebases, test on its own and review and push into github
 
 ---
 
@@ -36,7 +36,7 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
                │
         〔 Passes Validation? 〕
            ├─── No ──► (Feedback loop back to Coder Agent)
-           └─── Yes ─► [ Final Output / Pull Request ]
+           └─── Yes ─► [ Final Output / Push into new repo in your personal account ]
 
 ---
 
@@ -45,7 +45,7 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
 ### Prerequisites
 
 * **Python:** 3.10 or higher
-* **API Keys:** Access to a frontier LLM provider (e.g., OpenAI, Anthropic, or Google Gemini)
+* **API Keys:** Access to a frontier LLM provider (e.g.groq, or Google Gemini)
 * **Git** (for codebase cloning and version control actions)
 
 ### Installation & Setup
@@ -64,13 +64,10 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
 4. **Configure Environment Variables:**
     Create a .env file in the root directory of the project and supply your configurations:
 
-    # LLM Configuration
-    OPENAI_API_KEY=your_openai_api_key_here
-    # Or if using Gemini/Anthropic:
-    GEMINI_API_KEY=your_gemini_api_key_here
    
-    # GitHub Integration (Optional)
-    GITHUB_TOKEN=your_github_personal_access_token
+    Refer .env.example file to creare the .env configs.
+   
+    
    
     # Framework Flags
     ENVIRONMENT=development
@@ -80,9 +77,9 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
 
 ## 💻 Usage
 
-Run the primary agent dashboard or CLI execution script to begin providing engineering tasks:
+Run the primary agent dashboard 
 
-    python main.py --task "Write a comprehensive pytest suite for the utilities module"
+    streamlit main.py
 
 ### Example Tasks to Try:
 * "Analyze the repository structure and find bottlenecks in data processing."
