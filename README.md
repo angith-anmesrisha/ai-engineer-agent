@@ -65,7 +65,7 @@ The system uses a highly coordinated multi-agent workflow to ensure safety, code
     Create a .env file in the root directory of the project and supply your configurations:
 
    
-    Refer .env.example file to creare the .env configs.
+    Refer .env.example file to create the .env configs.
    
     
    
