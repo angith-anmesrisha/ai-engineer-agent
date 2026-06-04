@@ -91,23 +91,7 @@ Run the primary agent dashboard or CLI execution script to begin providing engin
 
 ---
 
-## 🛠️ Project Structure
 
-    ai-engineer-agent/
-    │
-    ├── config/                  # Configuration files and prompt templates
-    ├── src/
-    │   ├── agents/              # Individual Agent logic (Planner, Worker, Critic)
-    │   ├── tools/               # File system tools, executing runtimes, API wrappers
-    │   └── utils/               # Common helper utilities and logging modules
-    │
-    ├── tests/                   # Framework unit tests
-    ├── .env.example             # Template for local environment properties
-    ├── main.py                  # CLI application entry point
-    ├── requirements.txt         # Project package dependencies
-    └── README.md                # System documentation
-
----
 
 ## 🤝 Contributing
 
